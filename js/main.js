@@ -1,28 +1,28 @@
 formatSeconds = function (iSeconds) {
-    var interval = Math.floor(iSeconds / 31536000);
+    let iInterval = Math.floor(iSeconds / 31536000);
 
-    if (interval > 1) {
-        return interval + ' years';
+    if (iInterval > 1) {
+        return iInterval + ' years';
     }
 
-    interval = Math.floor(iSeconds / 2592000);
-    if (interval > 1) {
-        return interval + ' months';
+    iInterval = Math.floor(iSeconds / 2592000);
+    if (iInterval > 1) {
+        return iInterval + ' months';
     }
 
-    interval = Math.floor(iSeconds / 86400);
-    if (interval > 1) {
-        return interval + ' days';
+    iInterval = Math.floor(iSeconds / 86400);
+    if (iInterval > 1) {
+        return iInterval + ' days';
     }
 
-    interval = Math.floor(iSeconds / 3600);
-    if (interval > 1) {
-        return interval + ' hours';
+    iInterval = Math.floor(iSeconds / 3600);
+    if (iInterval > 1) {
+        return iInterval + ' hours';
     }
 
-    interval = Math.floor(iSeconds / 60);
-    if (interval > 1) {
-        return interval + ' minutes';
+    iInterval = Math.floor(iSeconds / 60);
+    if (iInterval > 1) {
+        return iInterval + ' minutes';
     }
 
     return Math.floor(iSeconds) + ' seconds';
