@@ -1,0 +1,66 @@
+<html>
+
+    <head>
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+
+        <script type="text/javascript" src="../js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="uk-container uk-text-center uk-position-center">
+            <h1 class="uk-heading-line uk-text-center"><span>Timer</span></h1>
+
+            <form onsubmit="return startTimer(event)" class="uk-form-stacked uk-text-left">
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="participant-number-input">Number of participants</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="participant-number-input" type="number" placeholder="5" value="5"
+                            required>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="average-income-input">Average income <span
+                            class="uk-text-meta">(per year)</span></label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="average-income-input" type="number" placeholder="60000"
+                            value="60000" required>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <button class="uk-button uk-button-default uk-button-large">Start</button>
+                    <button type="button" onclick="stopTimer()"
+                        class="uk-button uk-button-default uk-button-large">Stop</button>
+                    <button type="button" onclick="resetTimer()"
+                        class="uk-button uk-button-default uk-button-large">Reset</button>
+                </div>
+
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default uk-card-small">
+                        <div class="uk-text-left uk-card-body uk-text-lead">
+                            Cost: <b id="cost">0$</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default uk-card-small">
+                        <div class="uk-text-left uk-card-body uk-text-lead">
+                            Time elapsed: <b id="time-elapsed">0 seconds</b>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <a class="uk-link-muted" href="../index.html">Back to home</a>
+        </div>
+    </body>
+
+</html>

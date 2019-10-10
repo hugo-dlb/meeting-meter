@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+
+        <script type="text/javascript" src="../js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="uk-container uk-text-center uk-position-center">
+            <h1 class="uk-heading-line uk-text-center"><span>Fixed Time</span></h1>
+
+            <form onsubmit="return calculateFixed(event)" class="uk-form-stacked uk-text-left">
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="participant-number-input">Number of participants</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="participant-number-input" type="number" placeholder="5" value="5"
+                            required>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="average-income-input">Average income <span
+                            class="uk-text-meta">(per year)</span></label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="average-income-input" type="number" placeholder="60000"
+                            value="60000" required>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="duration-input">Duration <span class="uk-text-meta">(in
+                            minutes)</span></label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="duration-input" type="number" placeholder="30" value="30" required>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <button class="uk-button uk-button-default uk-button-large uk-width-1-1">Calculate</button>
+                </div>
+
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default uk-card-small">
+                        <div class="uk-text-left uk-card-body uk-text-lead">
+                            Cost: <b id="cost">62$</b>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <a class="uk-link-muted" href="../index.html">Back to home</a>
+        </div>
+    </body>
+
+</html>
