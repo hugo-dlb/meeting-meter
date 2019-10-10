@@ -57,7 +57,7 @@ const startTimer = function (oEvent) {
     }
 
     fnInterval = setInterval(() => {
-        iSecondsElapsed += 30;
+        iSecondsElapsed++;
         const iCost = getCost(iSecondsElapsed);
         oCostContainer.textContent = iCost + '$';
         oTimeElapsedContainer.textContent = formatSeconds(iSecondsElapsed);
