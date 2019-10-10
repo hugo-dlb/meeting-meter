@@ -1,6 +1,7 @@
 # Meeting meter
 
 A silly Vanilla JS project to calculate the cost of meetings.  
+Live version: https://meetingmeter.hugodlb.fr.
 
 Two modes are available :
 - Timer
