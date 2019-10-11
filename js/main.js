@@ -32,7 +32,7 @@ const getCost = function (iSeconds) {
     const iParticipants = parseInt(document.getElementById('participant-number-input').value, 10);
     const iAverageIncome = parseInt(document.getElementById('average-income-input').value, 10);
 
-    const iCost = Math.round(iParticipants * ((iAverageIncome / (365 - 20)) / 7 / 60 / 60) * iSeconds);
+    const iCost = Math.round(iParticipants * (iAverageIncome / (52 * 5 * 8) / 60 / 60) * iSeconds);
     return iCost;
 }
 
